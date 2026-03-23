@@ -1,4 +1,165 @@
-/*Formatação do config.html*/
+/*Definição geral*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text-collor);
+}
+:root{
+    --background-collor: #c8bfe7;
+    --background-light-collor: #d3cbeb;
+    --support-collor: #343a40;
+    --text-marker: #597734;
+    --text-collor: #0a0605;
+}
 
+/*Formatação do config.html*/
+.bodyConfig{
+    background-color: var(--background-collor);
+}
+.mainConfig{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    margin: 2em auto;
+    width: 90%;
+    background-color: var(--background-light-collor);
+    padding: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+/*Formatação da apresentação*/
+.presentationConfig{
+    width: 60%;
+    padding: 1em 1em;
+    margin: auto 0;
+}
+.presentationConfig>h1{
+    font-size: 4.7em;
+}
+.projectNameDrop{
+    text-decoration: underline;
+    background-color: var(--background-collor);
+}
+.divSpan{
+    font-weight: 300;
+    font-size: 2.7em;
+    background-color: var(--support-collor);
+    color: var(--background-collor);
+    text-align: center;
+    padding: 0.1em 0.3em;
+}
+/*Configuração dos inputs*/
+.userConfig{
+    width: 40%;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    font-size: 1.7em;
+    font-weight: 100;
+    text-align: center;
+    background-color: var(--background-collor);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+#name, #title, #description, #displayGrid, #displayColumn{
+    font-size: 1em;
+    font-weight: 100;
+    margin-top: 0.5em;
+    width: 100%;
+}
+#name, #title, #description{
+    background-color: var(--support-collor);
+    color: var(--background-collor);
+    border: var(--text-collor) solid 2px;
+}
+.userName, .listTitle, .displayList, .optionalDescription{
+    margin: 0.9em 0em;
+}
+.radioInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0.5em;
+}
+.radioInput>div{
+    display: flex;
+    flex-direction: column;
+}
+#description{
+    height: 8em;
+    overflow: auto;
+    resize: none;
+    width: 100%;
+    font-size: 0.7em;
+    font-weight: 100;
+}
+#concludedConfig{
+    background-color: var(--support-collor);
+    padding: 0.7em;
+    color: var(--background-collor);
+    font-size: 0.8em;
+}
+/*Footer*/
+.footerConfig{
+    background-color: var(--support-collor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+.projectRepository{
+    display: flex;
+    flex-direction: column;
+}
+.credits{
+    margin: 0 auto;
+    padding: 1em;
+    color: var(--background-collor);
+}
+.credits>a{
+    color: var(--background-collor);
+    text-decoration: underline;
+}
+.gitHubLogo{
+    width: 50px;
+    background-color: var(--background-collor);
+    border-radius: 4em;
+    padding: 0.2em;
+}
+.gitHubRepository{
+    text-align: right;
+}
 
 /*Formatação do index.html*/
+.bodyIndex{
+    background-color: var(--background-collor);
+}
+.mainIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em;
+    margin: 2em auto;
+    width: 90%;
+    background-color: var(--background-light-collor);
+    padding: 2em;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.itemList{
+    width: 60%;
+}
+.listContent{
+    width: 40%;
+}
+#list{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    border: red 2px solid;
+}
+.itemObject{
+    width: 25%;
+    margin: 2em 0em;
+    border: red 2px solid;
+}

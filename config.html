@@ -4,54 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Projeto</title>
-    <link rel="stylesheet" href="">
-
+    <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
-    <main>
+<body class="bodyConfig">
+    <main class="mainConfig">
         <div class="presentationConfig">
-            <h1>Bem vindo ao projeto "Lista de Afazeres"</h1>
-            <h2>Antes de começar a criar suas listas, primeiro vamos fazer umas configurações.</h2>
+            <h1>Bem vindo ao projeto <span class="projectNameDrop">"Lista de Afazeres"</span></h1>
+            <p class="divSpan">Primeiro, vamos configurar sua lista.</p>
         </div>
         <div class="userConfig">
             <form action="index.html" method="GET">
                 <div class="userName">
                     <p>Primeiro deixe-nos saber seu nome.</p>
-                    <label for="userName">Como você gostaria de ser chamado: </label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div class="userGender">
-                    <p>Defina seu gênero.</p>
-                    <label for="genderMale">Homem</label>
-                    <input type="radio" id="genderMale" name="genderMale">
-                    <label for="genderFamele">Mulher</label>
-                    <input type="radio" id="genderFamele" name="genderFamele">
-                    <label for="genderOther">Outro</label>
-                    <input type="radio" id="genderOther" name="genderOther">
+                    <label for="userName"></label>
+                    <input type="text" id="name" name="name" maxlength="25">
                 </div>
                 <div class="listTitle">
                     <p>Insira um título para sua lista.</p>
-                    <label for="listTitle">Título da lista: </label>
+                    <label for="listTitle"></label>
                     <input type="text" id="title" name="title">
                 </div>
-                <div class="displayList">
-                    <p>Como você gostaria de visualizar sua lista.</p>
-                    <label for="displayColumn">Visualização em Coluna</label>
-                    <input type="radio" id="displayColumn" name="displayColumn">
-                    <label for="displayGrid">Visualização em grade</label>
-                    <input type="radio" id="displayGrid" name="displayGrid">
+                <div class="optionalDescription">
+                    <p>Deseja inserir uma descrição para a sua lista?</p>
+                    <textarea name="description" id="description"></textarea>
                 </div>
-                <button type="submit">TERMINAR CONFIGURAÇÃO</button>
+                <button id="concludedConfig" type="submit">Concluir</button>
             </form>
         </div>
     </main>
-    <footer>
+    <footer class="footerConfig">
         <div class="projectCredit">
-            <p>Projeto Desenvolvido por <a href="https://github.com/nippum">nippum</a> (Daniel).</p>
-            <p>Projeto Idealizado por <a href="https://github.com/douglasbarcellos">Douglas Barcellos</a>.</p>
+            <p class="credits">
+                Desenvolvido por <a href="https://github.com/nippum" target="_blank">nippum</a> e 
+                idealizado por <a href="https://github.com/douglasbarcellos" target="_blank">Douglas Barcellos</a>.
+            </p>
         </div>
         <div class="projectRepository">
-            <p><a href="">Repositório do projeto no GitHub</a></p>
+            <a href="https://github.com/nippum/listaDeAfazeres" target="_blank" title="Repositório"><img src="img/gitLogo.png" alt="logo_gitHub" class="gitHubLogo"></a>
         </div>
     </footer>
 </body>

@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Projeto</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
-<body>
-    <header>
-        <div class="usersName"><p id="yourName">mudaram</p></div>
-        <nav></nav>
+<body class="bodyIndex">
+    <header class="headerIndex">
+        <div class="userName"><p id="yourName"></p></div>
     </header>
-    <main>
-        <div class="allContent">
-            <div class="allTitleList"><h1 id="titleList">can you hear the silence?</h1></div>
+    <main class="mainIndex">
+        <div class="itemList">
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="listContent">
+            <div class="titleList"><h1 id="yourTitle"></h1></div>
+            <div class="descriptionList"><p id="descList"></p></div>
             <div class="formInput">
                 <form>
-                    <label for="itemTitle">Titulo</label>
-                    <input type="text" id="itemTitle" name="itemTitle" placeholder="insira o titulo" value="baba"><br>
-                    <label for="itemContent">Conteudo</label>
-                    <input type="text" id="itemContent" name="itemContent" placeholder="conteudo aqui">
+                    <label for="itemTitle"></label>
+                    <input type="text" id="itemTitle" name="itemTitle" placeholder="titulo aqui..."><br>
+                    <label for="itemContent"></label>
+                    <input type="text" id="itemContent" name="itemContent" placeholder="conteudo aqui...">
                 </form>
             </div>
             <div class="formButton">
                 <button type="button" id="buttonCreate" onclick="criarItem()">criar item</button>
             </div>
-            <div class="itemList">
-                <ul id="list">
-                </ul>
-            </div>
-            <p id="consoleTenste"></p>
         </div>
     </main>
+    <p id="consoleTeste"></p>
     <footer>
         <div class="projectCredit">
             <p>Projeto Desenvolvido por <a href="https://github.com/nippum">nippum</a> (Daniel).</p>
