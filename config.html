@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Projeto</title>
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+    <main>
+        <div class="presentationConfig">
+            <h1>Bem vindo ao projeto "Lista de Afazeres"</h1>
+            <h2>Antes de começar a criar suas listas, primeiro vamos fazer umas configurações.</h2>
+        </div>
+        <div class="userConfig">
+            <form action="index.html" method="GET">
+                <div class="userName">
+                    <p>Primeiro deixe-nos saber seu nome.</p>
+                    <label for="userName">Como você gostaria de ser chamado: </label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="userGender">
+                    <p>Defina seu gênero.</p>
+                    <label for="genderMale">Homem</label>
+                    <input type="radio" id="genderMale" name="genderMale">
+                    <label for="genderFamele">Mulher</label>
+                    <input type="radio" id="genderFamele" name="genderFamele">
+                    <label for="genderOther">Outro</label>
+                    <input type="radio" id="genderOther" name="genderOther">
+                </div>
+                <div class="listTitle">
+                    <p>Insira um título para sua lista.</p>
+                    <label for="listTitle">Título da lista: </label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="displayList">
+                    <p>Como você gostaria de visualizar sua lista.</p>
+                    <label for="displayColumn">Visualização em Coluna</label>
+                    <input type="radio" id="displayColumn" name="displayColumn">
+                    <label for="displayGrid">Visualização em grade</label>
+                    <input type="radio" id="displayGrid" name="displayGrid">
+                </div>
+                <button type="submit">TERMINAR CONFIGURAÇÃO</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="projectCredit">
+            <p>Projeto Desenvolvido por <a href="https://github.com/nippum">nippum</a> (Daniel).</p>
+            <p>Projeto Idealizado por <a href="https://github.com/douglasbarcellos">Douglas Barcellos</a>.</p>
+        </div>
+        <div class="projectRepository">
+            <p><a href="">Repositório do projeto no GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
