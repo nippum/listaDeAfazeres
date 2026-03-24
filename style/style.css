@@ -99,7 +99,7 @@
     color: var(--background-collor);
     font-size: 0.8em;
 }
-/*Footer*/
+/*Footer, tanto do index, quanto do config*/
 .footerConfig{
     background-color: var(--support-collor);
     display: flex;
@@ -135,18 +135,37 @@
     background-color: var(--background-collor);
 }
 .mainIndex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 0.5em;
     margin: 2em auto;
     width: 90%;
+    height: 600px;
     background-color: var(--background-light-collor);
     padding: 2em;
     border-top-left-radius: 2em;
     border-bottom-left-radius: 2em;
 }
+.outConsole{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Header Formatacao*/
+.headerIndex{
+    background-color: var(--support-collor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+#yourName{
+    margin: 0 auto;
+    padding: 0em 2em 0.5em 1.3em;
+    color: var(--background-collor);
+    font-size: 1.2em;
+}
+/*Formatacao da lista*/
 .itemList{
+    overflow: auto;
     width: 60%;
 }
 .listContent{
@@ -156,10 +175,67 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
-    border: red 2px solid;
 }
 .itemObject{
-    width: 25%;
-    margin: 2em 0em;
-    border: red 2px solid;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 1em 2em;
+    width: 95%;
+    margin: 0.5em 0em;
+    background-color: var(--support-collor);
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+.itemObject>p{
+    color: var(--background-collor);
+    font-size: 1.2em;
+    padding: 0.3em 0.3em 0.3em 1em;
+}
+.itemObject>b{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--background-collor);
+    font-size: 1.5em;
+}
+/*Formatacao da criacao da lista*/
+#yourTitle{
+    font-size: 3em;
+    text-transform: capitalize;
+}
+#descList{
+    font-size: 1.5em;
+    text-align: center;
+}
+#itemTitle{
+    font-size: 2em;
+    font-weight: 100;
+    margin-top: 0.5em;
+    width: 100%;
+    background-color: var(--support-collor);
+    color: var(--background-collor);
+    border: var(--text-collor) solid 2px;
+}
+#itemContent{
+    resize: none;
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 200px;
+    background-color: var(--support-collor);
+    color: var(--background-collor);
+    border: var(--text-collor) solid 2px;
+}
+.formButton{
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+}
+#buttonCreate{
+    background-color: var(--support-collor);
+    padding: 0.7em;
+    color: var(--background-collor);
+    font-size: 1.4em;
+    width: 30%;
 }

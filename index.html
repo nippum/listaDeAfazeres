@@ -12,34 +12,38 @@
         <div class="userName"><p id="yourName"></p></div>
     </header>
     <main class="mainIndex">
-        <div class="itemList">
-            <ul id="list">
-            </ul>
-        </div>
-        <div class="listContent">
-            <div class="titleList"><h1 id="yourTitle"></h1></div>
-            <div class="descriptionList"><p id="descList"></p></div>
-            <div class="formInput">
-                <form>
-                    <label for="itemTitle"></label>
-                    <input type="text" id="itemTitle" name="itemTitle" placeholder="titulo aqui..."><br>
-                    <label for="itemContent"></label>
-                    <input type="text" id="itemContent" name="itemContent" placeholder="conteudo aqui...">
-                </form>
+        <div class="outConsole">
+            <div class="itemList">
+                <ul id="list">
+                </ul>
             </div>
-            <div class="formButton">
-                <button type="button" id="buttonCreate" onclick="criarItem()">criar item</button>
+            <div class="listContent">
+                <div class="titleList"><h1 id="yourTitle"></h1></div>
+                <div class="descriptionList"><p id="descList"></p></div>
+                <div class="formInput">
+                    <form>
+                        <label for="itemTitle"></label>
+                        <input type="text" id="itemTitle" name="itemTitle" placeholder="titulo aqui..."><br>
+                        <label for="itemContent"></label>
+                        <textarea name="itemContent" id="itemContent" placeholder="conteudo aqui..."></textarea>
+                    </form>
+                </div>
+                <div class="formButton">
+                    <button type="button" id="buttonCreate" onclick="criarItem()">criar item</button>
+                </div>
             </div>
         </div>
     </main>
-    <p id="consoleTeste"></p>
-    <footer>
+    
+    <footer class="footerConfig">
         <div class="projectCredit">
-            <p>Projeto Desenvolvido por <a href="https://github.com/nippum">nippum</a> (Daniel).</p>
-            <p>Projeto Idealizado por <a href="https://github.com/douglasbarcellos">Douglas Barcellos</a>.</p>
+            <p class="credits">
+                Desenvolvido por <a href="https://github.com/nippum" target="_blank">nippum</a> e 
+                idealizado por <a href="https://github.com/douglasbarcellos" target="_blank">Douglas Barcellos</a>.
+            </p>
         </div>
         <div class="projectRepository">
-            <p><a href="">Repositório do projeto no GitHub</a></p>
+            <a href="https://github.com/nippum/listaDeAfazeres" target="_blank" title="Repositório"><img src="img/gitLogo.png" alt="logo_gitHub" class="gitHubLogo"></a>
         </div>
     </footer>
     

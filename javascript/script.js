@@ -3,22 +3,32 @@ const name = params.get("name");
 const title = params.get("title");
 const description = params.get("description");
 
-document.getElementById("yourName").textContent = `Olá ${name}.`;
+document.getElementById("yourName").textContent = `Olá, ${name}.`;
 document.getElementById("yourTitle").textContent = title;
 document.getElementById("descList").textContent = `${description}`
 
 function criarItem(){
     let itemTitle = document.getElementById('itemTitle').value;
     let itemContent = document.getElementById('itemContent').value;
+    const borderWarnC = document.querySelector('#itemContent');
+    const borderWarnT = document.querySelector('#itemTitle');
 
     if (itemTitle != "") {
         if (itemContent != "") {
-            document.getElementById('list').innerHTML += `<div class="itemObject"><p><b>${itemTitle}: </b>${itemContent}</p></div>`;
-            document.getElementById('consoleTenste').innerHTML = "";
+            borderWarnT.style.setProperty('border','var(--text-collor) solid 2px');
+            borderWarnC.style.setProperty('border','var(--text-collor) solid 2px');
+            document.getElementById('list').innerHTML += `<div class="itemObject"><b>${itemTitle}</b><p>${itemContent}</p></div>`;
         }else {
-            document.getElementById('consoleTenste').innerHTML = "Preencha ambos os campos acima";
+            borderWarnC.style.setProperty('border','red solid 2px');
+            borderWarnT.style.setProperty('border','var(--text-collor) solid 2px');
         }
     }else {
-        document.getElementById('consoleTeste').innerHTML = "Preencha ambos os campos acima";
+        if (itemContent != "") {
+            borderWarnT.style.setProperty('border','red solid 2px');
+            borderWarnC.style.setProperty('border','var(--text-collor) solid 2px');
+        }else {
+            borderWarnC.style.setProperty('border','red solid 2px')
+            borderWarnT.style.setProperty('border','red solid 2px')
+        }
     }
 }
